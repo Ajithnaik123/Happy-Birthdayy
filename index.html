@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise | Bhanu Priya</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+   <audio id="bdaySong" src="happy-birthday.mp3.mp3" loop></audio>
+    <div id="step1" class="screen">
+        <a href="#" class="main-link" onclick="showBirthday()">Click here</a>
+    </div>
+
+    <div id="step2" class="card hidden">
+        <h1>Happy Birthday <br><span class="name">Bhanu Priya!</span> 🎂</h1>
+        <p>I have a special gift for you</p>
+        <button class="btn" onclick="showFunnyMessage()">Open Gift 🎁</button>
+    </div>
+
+    <div id="step3" class="card hidden">
+        <p class="funny-text">"Gift ledhu em ledhu <br>Back vellipo 😂"</p>
+        <button class="btn secondary" onclick="showCake()">Sare malli click chey!</button>
+    </div>
+
+    <div id="step4" class="card hidden">
+        <h1>Make a Wish! 🍰</h1>
+        <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="candles">
+                <div class="candle" id="c1"><div class="flame"></div></div>
+                <div class="candle" id="c2"><div class="flame"></div></div>
+                <div class="candle" id="c3"><div class="flame"></div></div>
+            </div>
+        </div>
+        <h2 id="status-text">Celebrate today, smile always😊💫 </h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
